@@ -10,7 +10,7 @@ services:
     build:
       context: .
     ports:
-      - "6600:6600"
+      - "5000:5000"
     depends_on:
       - postgres
     volumes:

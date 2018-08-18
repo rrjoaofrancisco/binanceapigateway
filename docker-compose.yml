@@ -14,7 +14,7 @@ services:
     depends_on:
       - postgres
     volumes:
-      - ${PWD}:/app:z
+      - ${PWD}:/heroku:z
     env_file:
       - extra/local.env
 

@@ -10,11 +10,11 @@ services:
     build:
       context: .
     ports:
-      - "5000:5000"
+      - "6600:6600"
     depends_on:
       - postgres
     volumes:
-      - ${PWD}:/heroku:z
+      - ${PWD}:/app:z
     env_file:
       - extra/local.env
 

@@ -25,7 +25,7 @@ SECRET_KEY = 'bhlx0y2=f-r2=gb4q^9&&l&%dc#xb!ut^ju&98=t)9d(-wk87+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['binance-api-gateway.herokuapp.com']
 
 
 # Application definition

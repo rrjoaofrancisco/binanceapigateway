@@ -4,6 +4,6 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 CMD ["python","/app/manage.py","makemigrations"]
 CMD ["python","/app/manage.py","migrate"]
-CMD ["gunicorn", "--worker-class=sync","--workers=4", "--reload", "--log-level", "debug", "--log-file=-", "--access-logfile=-", "binanceapigateway.wsgi", "--chdir", "/app", "-b", "0.0.0.0:5000"]
+CMD ["gunicorn", "--workers=4", "binanceapigateway.wsgi", "--chdir", "/app"]
 #python /app/manage.py compilemessages
 #python /app/manage.py collectstatic

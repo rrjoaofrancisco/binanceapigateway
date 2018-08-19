@@ -9,8 +9,9 @@ services:
     container_name: binance-api-gateway
     build:
       context: .
+      dockerfile: Dockerfile-local
     ports:
-      - "5000:5000"
+      - 6600:6600
     depends_on:
       - postgres
     volumes:

@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'bhlx0y2=f-r2=gb4q^9&&l&%dc#xb!ut^ju&98=t)9d(-wk87+'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ['DEBUG']
 
-ALLOWED_HOSTS = ['binance-api-gateway.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', 'binance-api-gateway.herokuapp.com']
 
 
 # Application definition

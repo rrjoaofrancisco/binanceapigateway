@@ -15,7 +15,7 @@ services:
     depends_on:
       - postgres
     volumes:
-      - ${PWD}:/app:z
+      - ./:/app:z
     env_file:
       - extra/local.env
 

@@ -5,8 +5,8 @@ volumes:
       driver: local
 
 services:
-  gateway:
-    container_name: binance-api-gateway
+  gateway-local:
+    container_name: binance-api-gateway-local
     build:
       context: .
       dockerfile: Dockerfile-local
